@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.035em;
+    color: #828282;
+    padding: 10px 0px;
+}
+.footer-link {
+    color: #828282;
+    text-decoration: none;
+    border-bottom: 1px solid #828282;
+
+}
+
+@media only screen and (max-width: 550px) {
+    .footer {
+        padding: 10px;
+    }
+}
+
+

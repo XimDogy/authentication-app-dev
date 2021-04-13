@@ -1,20 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './Register.css';
 import logo  from '../../images/devchallenges.svg';
 import googleLogo from '../../images/Google.svg';
 import facebookLogo from '../../images/Facebook.svg';
 import twitterLogo from '../../images/Twitter.svg';
 import githubLogo from '../../images/Gihub.svg';
 
-const Register = () => {
-
-    return (
+const Login = () => {
+    return(
         <div className="card">
             
             <img id="logo" src={logo} alt="devchallenges" />
-            <h5>Join thousands of learners from around the world </h5>
-            <p className="quote">Master web development by making real-life projects. There are multiple paths for you to choose</p>
+            <h5>Login </h5>
             
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
@@ -29,11 +26,10 @@ const Register = () => {
                 <img src={twitterLogo} alt="twitter" />
                 <img src={githubLogo} alt="github" />
             </div>
-            <span className="already-message" >Adready a member? <Link to="/login"><button>Login</button></Link></span>
+            <span className="already-message" >Don't have an account yet? <Link to="/register"><button>Register</button></Link></span>
             
         </div>
-        
     )
 }
 
-export default Register;
+export default Login;
