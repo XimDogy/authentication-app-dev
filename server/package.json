@@ -4,6 +4,10 @@
   "description": "devchallenges authentication app solution",
   "main": "server.js",
   "type": "module",
+  "engines": {
+    "node": "15.6.0",
+    "npm": "7.5.2"
+},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
