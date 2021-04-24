@@ -1,7 +1,10 @@
+:root {
+    --noto-font-family: 'Noto Sans KR', sans-serif;
+}
 .footer {
     display: flex;
     justify-content: space-between;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: var(--noto-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

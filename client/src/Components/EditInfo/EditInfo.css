@@ -1,0 +1,226 @@
+:root {
+    --noto-font-family: 'Noto Sans KR', sans-serif;
+}
+
+.back-btn-div {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.back-btn-div:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.back-btn-div svg {
+    height: 18px;
+    width: 18px;
+}
+
+.back-btn-div span{
+    color: #2D9CDB;
+    text-align: center;
+    font-family: var(--noto-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.035em;
+}
+
+.edit-info-card {
+    margin-top: 24px;
+    width: 845.91px;
+    height: 827.56px;
+
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    
+    padding: 30px 46px;
+}
+
+.edit-info-card h1 {
+    font-family: var(--noto-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    letter-spacing: -0.035em;
+
+    color: #000000;
+
+}
+
+.edit-info-card p {
+    margin-top: 4px;
+    font-family: var(--noto-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.035em;
+    color: #828282;
+}
+
+.edit-profile-image-div {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper {
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.edit-profile-image-div img{
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.image-wrapper svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.image-wrapper svg:hover {
+    cursor: pointer;
+}
+
+.edit-profile-image-div span {
+    font-family: var(--noto-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    
+    letter-spacing: -0.035em;
+    
+    color: #828282;
+    
+}
+/* form  */
+
+
+
+.edit-info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+}
+
+.photo-input {
+    display: none;
+}
+
+.edit-info-form label {
+    margin-top: 24px;
+    font-family: var(--noto-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    
+    letter-spacing: -0.035em;
+    
+    color: #4F4F4F;
+}
+.edit-info-form input, textarea {
+    font-family: var(--noto-font-family);
+    padding: 18px;
+    outline: none;
+}
+
+.edit-info-form input::placeholder, textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: var(--noto-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.035em;    
+    color: #BDBDBD;
+    opacity: 1;
+
+}
+
+.edit-name, .edit-phone, .edit-email, .edit-password{ 
+    width: 416.93px;
+    height: 52px;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+
+.edit-bio {
+    width: 416.93px;
+    height: 91.58px;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+    resize: none;
+}
+
+.edit-name:focus, .edit-phone:focus, .edit-email:focus, .edit-password:focus, .edit-bio:focus{
+    border: 2px solid #828282;
+}
+
+
+.edit-info-save-btn {
+    margin-top: 24px;
+    height: 38px;
+    width: 82px;
+    background: #2F80ED;
+    border-radius: 8px;
+    border: none;
+
+    font-family: var(--noto-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+}
+
+.edit-info-save-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .edit-info {
+        width: 100vw;
+    }
+
+    .back-btn-div {
+        padding: 0 5%;
+        margin: 10px 0;
+    }
+    .edit-info-card {
+        margin-top: 0;
+        width: 100%;
+        border: none;
+        margin-left: 0;
+        padding: 5%;
+    }
+
+    .edit-name, .edit-phone, .edit-email, .edit-password, .edit-bio {
+        width: 100%;
+    }
+
+    
+}

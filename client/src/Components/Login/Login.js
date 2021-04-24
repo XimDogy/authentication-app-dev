@@ -1,33 +1,61 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, {useState} from 'react';
+import {Link, useHistory} from 'react-router-dom';
 import logo  from '../../images/devchallenges.svg';
-import googleLogo from '../../images/Google.svg';
-import facebookLogo from '../../images/Facebook.svg';
-import twitterLogo from '../../images/Twitter.svg';
-import githubLogo from '../../images/Gihub.svg';
+import Footer from '../Footer/Footer';
+
+//api
+import { login } from '../../actions/userActions.js';
+import OAuth from '../OAuth/OAuth';
 
 const Login = () => {
+    const history = useHistory();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [showMessage, setshowMessage] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
+
+    const profile = JSON.parse(localStorage.getItem("profile"));
+
+    if(profile) {
+        history.push('/');
+    }
+
+
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        login(email, password, history, setshowMessage, setIsLoading);
+    }
+    
     return(
-        <div className="card">
-            
-            <img id="logo" src={logo} alt="devchallenges" />
-            <h5>Login </h5>
-            
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-
-            <button className="primary-button">Start coding now</button>
-            
-            <p className="or-message" href="#">or continue with these social profile</p>
-
-            <div className="social-logos">
-                <img src={googleLogo} alt="google" />
-                <img src={facebookLogo} alt="facebook" />
-                <img src={twitterLogo} alt="twitter" />
-                <img src={githubLogo} alt="github" />
+        <div className="wrapper">
+            <div className="show-message-div">
+                <p>{showMessage}</p>
             </div>
-            <span className="already-message" >Don't have an account yet? <Link to="/register"><button>Register</button></Link></span>
+            <div className="card">
             
+                <img id="logo" src={logo} alt="devchallenges" />
+                <h5>Login </h5>
+                
+                <form onSubmit={(e) => handleLogin(e)}>
+                    <div className="email-wrapper">
+                        <input onChange={(e) => setEmail(e.target.value)} id="email" type="email" name="email" placeholder="Email" />
+                    </div>
+                    
+                    <div className="password-wrapper">
+                        <input  onChange={(e) => setPassword(e.target.value)} type="password" name="password" placeholder="Password" />
+                    </div>
+
+                    <button type="submit" className="primary-button"> {isLoading? <i className="fas fa-circle-notch fa-spin"></i> : "Start coding now"} </button>
+                </form>
+                
+                <p className="or-message" href="#">or continue with these social profile</p>
+
+               <OAuth setshowMessage={setshowMessage} history={history} setIsLoading={setIsLoading}/>
+                <span className="already-message" >Don't have an account yet? <Link to="/register"><button>Register</button></Link></span>
+            
+            </div>
+            <Footer />
         </div>
     )
 }

@@ -1,8 +1,23 @@
+:root {
+    --noto-font-family: 'Noto Sans KR', sans-serif;
+}
 .notfound {
     width: 50vw;
     height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
+    font-family: var(--noto-font-family);
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    
+    
+}
+
+.notfound h1 {
+    font-family: var(--noto-font-family);
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
 }
