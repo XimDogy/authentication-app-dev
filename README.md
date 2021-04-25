@@ -38,6 +38,8 @@
 ## Overview
 
 ![screenshot](https://github.com/XimDogy/authentication-app-dev/blob/master/client/src/images/Screenshot%20from%202021-04-25%2019-49-53.png)
+![screenshot](https://github.com/XimDogy/authentication-app-dev/blob/master/client/src/images/Screenshot%20from%202021-04-25%2019-48-07.png)
+![screenshot](https://github.com/XimDogy/authentication-app-dev/blob/master/client/src/images/Screenshot%20from%202021-04-25%2019-47-54.png)
 
 
 This is a small authentication system app with almost no extra feautures. You you use this authentication app in your any MERN stack websites:
