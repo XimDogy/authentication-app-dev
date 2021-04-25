@@ -38,8 +38,7 @@
 ## Overview
 
 ![screenshot](/relative/client/src/images/Screenshot from 2021-04-25 19-47-54.png?raw=true "Optional Title")
-![screenshot](/relative/client/src/images/Screenshot from 2021-04-25 19-48-07.png?raw=true "Optional Title")
-![screenshot](/relative/client/src/images/Screenshot from 2021-04-25 19-49-53.png?raw=true "Optional Title")
+
 
 This is a small authentication system app with almost no extra feautures. You you use this authentication app in your any MERN stack websites:
 
