@@ -37,7 +37,7 @@
 
 ## Overview
 
-![screenshot](/relative/client/src/images/Screenshot from 2021-04-25 19-47-54.png?raw=true "Optional Title")
+![screenshot]("https://github.com/XimDogy/authentication-app-dev/blob/master/client/src/images/Screenshot%20from%202021-04-25%2019-49-53.png")
 
 
 This is a small authentication system app with almost no extra feautures. You you use this authentication app in your any MERN stack websites:
