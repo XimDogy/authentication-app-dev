@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://authentication-app-devchallenges.netlify.app">
       Demo
     </a>
     <span> | </span>
@@ -37,28 +37,39 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](/relative/client/src/images/Screenshot from 2021-04-25 19-47-54.png?raw=true "Optional Title")
+![screenshot](/relative/client/src/images/Screenshot from 2021-04-25 19-48-07.png?raw=true "Optional Title")
+![screenshot](/relative/client/src/images/Screenshot from 2021-04-25 19-49-53.png?raw=true "Optional Title")
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+This is a small authentication system app with almost no extra feautures. You you use this authentication app in your any MERN stack websites:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- To see the demo app click DEMO on top
+- It as quite fun making this project as a chellenge.
+- I have learned a lot. I learned about password encryption and hashing. I learned to use Jason web token to check users validity. Learned about local storage and cookies.
+- Authentication system is a very important part of a website or app. To secure users private information. Try to learn more about security and be updated with new technologies to keep your app safe. :)
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Nodejs](https://nodejs.org/)
+- [Express](https://tailwindcss.com/)
+- [MongoDB](https://www.mongodb.com/)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/N1fvBjQfhlkctmwj1tnw) was to build an application to complete the given user storie.
+
+- You can register with email and password
+- You can login with your credentials
+- You can see your profile information
+- You can edit your profile information
+- Yo can logout
+- You will be automatically logged out after 1 hour of inactivity
+- You can use google oAuth2.0 to login or register
 
 ## How To Use
 
@@ -87,6 +98,4 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
 - GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
